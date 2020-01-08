@@ -5,7 +5,6 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:musicforall_app/globalappconstants.dart';
 
-import 'entities/album.dart';
 
 
 class DiscoverPage extends StatefulWidget {
@@ -48,6 +47,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
         _editorAlbums.addAll(value);
       });
     });
+
     super.initState();
   }
 
@@ -69,7 +69,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
                     child: Card(
                       child: Wrap(
                         children: <Widget>[
-                          Image.network(_editorAlbums[index]['links']['images']['href']),
+                          Image.network("https://api.napster.com/imageserver/v2/albums/${_editorAlbums[index]['id']}/images/500x500.jpg"),
                           ListTile(
                             title: Text(_editorAlbums[index]['name']),
                             subtitle: Text(_editorAlbums[index]['artistName']),

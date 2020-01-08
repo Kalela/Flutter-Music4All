@@ -30,7 +30,7 @@ class MyAppState extends State<MyMusicApp>{
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('Music For All App'),),
+        appBar: AppBar(title: Text('Play 2 Win'),),
         body: _pageOptions[_selectedPage],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedPage,

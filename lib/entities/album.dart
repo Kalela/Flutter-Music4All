@@ -16,13 +16,14 @@ class Album {
   bool isExplicit;
   AlbumLink link;
   String artistName;
+  String albumImageUrl;
 
   Album(this.id, this.upc, this.shortcut,
       this.href, this.name, this.released,
       this.originallyReleased, this.label,
       this.copyright, this.tags,
       this.isExplicit, this.link,
-      this.artistName);
+      this.artistName, this.albumImageUrl);
 
   Album.fromJson(Map<String, dynamic> json) {
     id = json['id'];
