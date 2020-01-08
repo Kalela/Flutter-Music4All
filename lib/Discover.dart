@@ -1,4 +1,12 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+import 'package:musicforall_app/globalappconstants.dart';
+
+import 'entities/album.dart';
+
 
 class DiscoverPage extends StatefulWidget {
   DiscoverPage({Key key, this.title}) : super(key: key);
@@ -7,40 +15,77 @@ class DiscoverPage extends StatefulWidget {
 
   @override
   _DiscoverPageState createState() => _DiscoverPageState();
+
 }
 
 class _DiscoverPageState extends State<DiscoverPage> {
-  int _counter = 0;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
+  List<dynamic> _editorAlbums = new List<dynamic>();
+
+  Future<List<dynamic>> getEditorPicks() async {
+    List<dynamic> albums = new List<dynamic>();
+
+    http.Response response = await http
+        .get(
+          Uri.encodeFull('http://api.napster.com/v2.2/albums/picks'),
+          headers: {
+          'apikey':GlobalAppConstants.apiKey,
+            'Accept': 'application/json'
+          }
+        );
+
+    if (response.statusCode == 200) {
+      var editorsChoiceResponse = json.decode(response.body);
+      albums = editorsChoiceResponse['albums'];
+    }
+    return albums;
+  }
+
+  @override
+  void initState() {
+    getEditorPicks().then((value) {
+      setState(() {
+        _editorAlbums.addAll(value);
+      });
     });
+    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text('Discover Layout', style: TextStyle(fontSize: 36.0),),
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
+            Container(
+              margin: EdgeInsets.symmetric(vertical: 20.0),
+              height: 250,
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  return
+                  Container(
+                    width: 160,
+                    child: Card(
+                      child: Wrap(
+                        children: <Widget>[
+                          Image.network(_editorAlbums[index]['links']['images']['href']),
+                          ListTile(
+                            title: Text(_editorAlbums[index]['name']),
+                            subtitle: Text(_editorAlbums[index]['artistName']),
+                          )
+                        ],
+                      ),
+                    ),
+                  );
+                },
+                scrollDirection: Axis.horizontal,
+                itemCount: _editorAlbums.length,
+              ),
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
