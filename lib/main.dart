@@ -25,12 +25,19 @@ class MyAppState extends State<MyMusicApp>{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Ambient Music Player',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(title: Text('Play 2 Win'),),
+        appBar: AppBar(title: Text(
+          'Ambient Music Player',
+          style: TextStyle(fontSize: 25.0, color: Colors.white70),
+          ),
+          backgroundColor: Color(0xFF2d3447),
+          actions: <Widget>[
+          ],
+        ),
         body: _pageOptions[_selectedPage],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectedPage,

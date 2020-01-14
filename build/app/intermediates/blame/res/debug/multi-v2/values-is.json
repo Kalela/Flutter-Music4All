@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/philipkalela/AndroidStudioProjects/musicforall_app/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml",
+            "outputFile": "/Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-is/values-is.xml",
             "map": [
                 {
                     "source": "/Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/res/values-is/values-is.xml",
