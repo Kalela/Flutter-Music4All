@@ -5,29 +5,35 @@ INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/and
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml:1:1-30:12
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml:1:1-30:12
 MERGED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml:1:1-30:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/84d22784334fd028cdf746ac44fa3342/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e3eb8b15772ec829dcf209e8e802e713/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/47b340b0c8e357b683c33bb06ca19cf3/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7d95adf5b88dd1f9089b34bd4d2e8a93/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2b55f4dd1ddfb477bff2667016cc0a25/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/454541ed0d74e0d0babd214b189709ff/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/41c88a9f96e450bd637ed756ecda85b5/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b275e0ac511ead6a0c329e93803bbcd1/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/65668fdc6b75dc53c12b7eb5f279be35/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/060334bf991aabc91fba7fe93737f90d/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a2947b2bc56055381fd4cf778505ff5b/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f6bc0e7d77e6892103599bafeb5668e7/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a72cc53d82cf5702357646245a6e016a/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/439f22ecfa3eb2cee779567eba299ed4/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e5d23450977c2b96e566605cba9e8c80/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/1ec2dc6fe69a6fe7214f4bc479f47da3/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/563d9df2e00592c9851c330153c7bd3f/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/598256249c7c77b96135e9aeda8121e5/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/89da2d2b13f2717b13dbde907d33a117/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/1d0c7e854dcd581b455273fbcbc11e01/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e5eed722b2004ca64fbe6c90991e06af/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/6d7a62f88f3d54b469312a470cec53c7/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [:flute_music_player] /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/build/flute_music_player/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7ad6ec17327ea79f37575b333ee4be38/appcompat-v7-27.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3461e0229e250fb25dac2063220798b4/support-v4-27.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/90c810c3c83f646b9ee43780001f7556/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/730ff64e6dd1347020f4f175f9df2723/animated-vector-drawable-27.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/058c24662e56b31fe82a7aa3d7ce67e1/support-core-ui-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/502191c317dd7a1a9d0e9971cfa2e7a1/support-core-utils-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/d77a1b6ad8cdeffac4cd6ab8a297e3f0/loader-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7acc85a7a1c6e522b6aff3ba4b4fb0aa/support-vector-drawable-27.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2480a9525c6a1803c97e91cc51a016ad/support-media-compat-27.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2aabb1519c810a5c7e12a6dce869f9b9/viewpager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/304917d32789206e1c4c96293769c1f2/coordinatorlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a5cadfb448ddd3485363f6785cdd58a4/drawerlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/4c3ff00156ebdc8a48c0c8477ad6f5aa/slidingpanelayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/d86233e200241e2d080a85ab360d7763/customview-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/544a43d538e0f700c037b0b45cd2fb12/swiperefreshlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/45ffd24c46777b69896a0c1045604500/asynclayoutinflater-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b1d32f2afbb0c48c674c6ff88982425e/support-compat-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/5fa00defd55245a7612c725ec9aec230/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/fee8d0f24e996daf82908519b39e22d4/livedata-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3217480aefd7f4f5d07689387f79f124/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f4fb55a7d9c8899215fcc1e6d6227747/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b6dbc95254ca12ed0cafb5dd74ff2665/viewmodel-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f5ae91c475cf422a0a7132ae1d49467c/versionedparcelable-28.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3185c88c4737f349cbdaf5a48f141701/interpolator-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f53d55bd860e2bf89fdb2d66f2b29209/cursoradapter-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/ea8dbdbd6ff207250701137f4c4c98fe/documentfile-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/56477e270ffeaf0320122fa25e846f51/localbroadcastmanager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/df90bb3558e633199e8d7cc72086c5ed/print-28.0.0/AndroidManifest.xml:17:1-22:12
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -47,12 +53,12 @@ INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/and
 		ADDED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml:1:11-69
 application
 ADDED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml:8:5-29:19
-MERGED from [androidx.core:core:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/AndroidManifest.xml:22:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/563d9df2e00592c9851c330153c7bd3f/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/563d9df2e00592c9851c330153c7bd3f/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b1d32f2afbb0c48c674c6ff88982425e/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b1d32f2afbb0c48c674c6ff88982425e/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f5ae91c475cf422a0a7132ae1d49467c/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f5ae91c475cf422a0a7132ae1d49467c/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/AndroidManifest.xml:22:18-86
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b1d32f2afbb0c48c674c6ff88982425e/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 	android:label
 		ADDED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml:10:9-40
 	android:icon
@@ -93,52 +99,64 @@ uses-sdk
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/main/AndroidManifest.xml
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/84d22784334fd028cdf746ac44fa3342/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/84d22784334fd028cdf746ac44fa3342/fragment-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e3eb8b15772ec829dcf209e8e802e713/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e3eb8b15772ec829dcf209e8e802e713/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/47b340b0c8e357b683c33bb06ca19cf3/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/47b340b0c8e357b683c33bb06ca19cf3/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7d95adf5b88dd1f9089b34bd4d2e8a93/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7d95adf5b88dd1f9089b34bd4d2e8a93/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2b55f4dd1ddfb477bff2667016cc0a25/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2b55f4dd1ddfb477bff2667016cc0a25/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/454541ed0d74e0d0babd214b189709ff/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/454541ed0d74e0d0babd214b189709ff/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/41c88a9f96e450bd637ed756ecda85b5/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/41c88a9f96e450bd637ed756ecda85b5/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b275e0ac511ead6a0c329e93803bbcd1/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b275e0ac511ead6a0c329e93803bbcd1/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/65668fdc6b75dc53c12b7eb5f279be35/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/65668fdc6b75dc53c12b7eb5f279be35/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/060334bf991aabc91fba7fe93737f90d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/060334bf991aabc91fba7fe93737f90d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a2947b2bc56055381fd4cf778505ff5b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a2947b2bc56055381fd4cf778505ff5b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f6bc0e7d77e6892103599bafeb5668e7/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f6bc0e7d77e6892103599bafeb5668e7/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a72cc53d82cf5702357646245a6e016a/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a72cc53d82cf5702357646245a6e016a/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/439f22ecfa3eb2cee779567eba299ed4/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/439f22ecfa3eb2cee779567eba299ed4/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e5d23450977c2b96e566605cba9e8c80/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e5d23450977c2b96e566605cba9e8c80/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/1ec2dc6fe69a6fe7214f4bc479f47da3/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/1ec2dc6fe69a6fe7214f4bc479f47da3/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/563d9df2e00592c9851c330153c7bd3f/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/563d9df2e00592c9851c330153c7bd3f/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/598256249c7c77b96135e9aeda8121e5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/598256249c7c77b96135e9aeda8121e5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/89da2d2b13f2717b13dbde907d33a117/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/89da2d2b13f2717b13dbde907d33a117/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/1d0c7e854dcd581b455273fbcbc11e01/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/1d0c7e854dcd581b455273fbcbc11e01/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e5eed722b2004ca64fbe6c90991e06af/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/e5eed722b2004ca64fbe6c90991e06af/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/6d7a62f88f3d54b469312a470cec53c7/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/6d7a62f88f3d54b469312a470cec53c7/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [:flute_music_player] /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/build/flute_music_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:flute_music_player] /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/build/flute_music_player/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7ad6ec17327ea79f37575b333ee4be38/appcompat-v7-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7ad6ec17327ea79f37575b333ee4be38/appcompat-v7-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3461e0229e250fb25dac2063220798b4/support-v4-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3461e0229e250fb25dac2063220798b4/support-v4-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/90c810c3c83f646b9ee43780001f7556/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/90c810c3c83f646b9ee43780001f7556/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/730ff64e6dd1347020f4f175f9df2723/animated-vector-drawable-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/730ff64e6dd1347020f4f175f9df2723/animated-vector-drawable-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/058c24662e56b31fe82a7aa3d7ce67e1/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/058c24662e56b31fe82a7aa3d7ce67e1/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/502191c317dd7a1a9d0e9971cfa2e7a1/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/502191c317dd7a1a9d0e9971cfa2e7a1/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/d77a1b6ad8cdeffac4cd6ab8a297e3f0/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/d77a1b6ad8cdeffac4cd6ab8a297e3f0/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7acc85a7a1c6e522b6aff3ba4b4fb0aa/support-vector-drawable-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7acc85a7a1c6e522b6aff3ba4b4fb0aa/support-vector-drawable-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2480a9525c6a1803c97e91cc51a016ad/support-media-compat-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2480a9525c6a1803c97e91cc51a016ad/support-media-compat-27.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2aabb1519c810a5c7e12a6dce869f9b9/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/2aabb1519c810a5c7e12a6dce869f9b9/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/304917d32789206e1c4c96293769c1f2/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/304917d32789206e1c4c96293769c1f2/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a5cadfb448ddd3485363f6785cdd58a4/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a5cadfb448ddd3485363f6785cdd58a4/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/4c3ff00156ebdc8a48c0c8477ad6f5aa/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/4c3ff00156ebdc8a48c0c8477ad6f5aa/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/d86233e200241e2d080a85ab360d7763/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/d86233e200241e2d080a85ab360d7763/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/544a43d538e0f700c037b0b45cd2fb12/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/544a43d538e0f700c037b0b45cd2fb12/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/45ffd24c46777b69896a0c1045604500/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/45ffd24c46777b69896a0c1045604500/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b1d32f2afbb0c48c674c6ff88982425e/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b1d32f2afbb0c48c674c6ff88982425e/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/5fa00defd55245a7612c725ec9aec230/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/5fa00defd55245a7612c725ec9aec230/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/fee8d0f24e996daf82908519b39e22d4/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/fee8d0f24e996daf82908519b39e22d4/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3217480aefd7f4f5d07689387f79f124/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3217480aefd7f4f5d07689387f79f124/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f4fb55a7d9c8899215fcc1e6d6227747/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f4fb55a7d9c8899215fcc1e6d6227747/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b6dbc95254ca12ed0cafb5dd74ff2665/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b6dbc95254ca12ed0cafb5dd74ff2665/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f5ae91c475cf422a0a7132ae1d49467c/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f5ae91c475cf422a0a7132ae1d49467c/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3185c88c4737f349cbdaf5a48f141701/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/3185c88c4737f349cbdaf5a48f141701/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f53d55bd860e2bf89fdb2d66f2b29209/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/f53d55bd860e2bf89fdb2d66f2b29209/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/ea8dbdbd6ff207250701137f4c4c98fe/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/ea8dbdbd6ff207250701137f4c4c98fe/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/56477e270ffeaf0320122fa25e846f51/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/56477e270ffeaf0320122fa25e846f51/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/df90bb3558e633199e8d7cc72086c5ed/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/philipkalela/.gradle/caches/transforms-2/files-2.1/df90bb3558e633199e8d7cc72086c5ed/print-28.0.0/AndroidManifest.xml:20:5-44
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
