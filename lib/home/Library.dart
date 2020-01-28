@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flute_music_player/flute_music_player.dart';
+import 'package:musicforall_app/util/globalappconstants.dart';
 import 'package:musicforall_app/util/loaders/loader.dart';
 
 class LibraryPage extends StatefulWidget {
@@ -49,8 +50,8 @@ class _LibraryPageState extends State<LibraryPage> {
   Widget build(BuildContext context) {
     Widget child;
     if(_songs != null) {
-      child = Material(
-          child: Scaffold(
+      child = Scaffold(
+            backgroundColor: GlobalAppConstants.appBackgroundColor,
             body: Container(
               margin: EdgeInsets.symmetric(vertical: 20.0),
               height: 240,
@@ -75,11 +76,9 @@ class _LibraryPageState extends State<LibraryPage> {
                 itemCount: _songs.length,
               ),
             ),
-          )
       );
     } else {
-      child = Material(
-        child: Scaffold(
+      child = Scaffold(
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -91,7 +90,6 @@ class _LibraryPageState extends State<LibraryPage> {
               ],
             )
           )
-        ),
       );
     }
     return child;

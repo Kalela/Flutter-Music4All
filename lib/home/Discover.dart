@@ -3,6 +3,8 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:musicforall_app/internal/playlists/editors_picks_page.dart';
+import 'package:musicforall_app/internal/playlists/featured_playlist_page.dart';
 import 'package:musicforall_app/util/globalappconstants.dart';
 import 'package:musicforall_app/util/now_playing_footer.dart';
 
@@ -74,7 +76,7 @@ class _DiscoverPageState extends State<DiscoverPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2d3447),
+      backgroundColor: GlobalAppConstants.appBackgroundColor,
       body: Center(
           child: CustomScrollView(
         slivers: <Widget>[
@@ -92,7 +94,11 @@ class _DiscoverPageState extends State<DiscoverPage> {
           SliverList(
             delegate: SliverChildListDelegate([
               FlatButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) => EditorsPickPage(_editorAlbums)
+                  ));
+                },
                 color: Color(0xFF2d3447),
                 child: ButtonBar(
                   alignment: MainAxisAlignment.spaceBetween,
@@ -139,7 +145,11 @@ class _DiscoverPageState extends State<DiscoverPage> {
                 ),
               ),
               FlatButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => FeaturedPlaylistsPage(_featuredPlaylists)
+                  ));
+                },
                 color: Color(0xFF2d3447),
                 child: ButtonBar(
                   alignment: MainAxisAlignment.spaceBetween,
