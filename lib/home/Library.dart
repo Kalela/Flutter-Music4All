@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flute_music_player/flute_music_player.dart';
 import 'package:musicforall_app/util/globalappconstants.dart';
 import 'package:musicforall_app/util/loaders/loader.dart';
+import 'package:permission/permission.dart';
 
 class LibraryPage extends StatefulWidget {
   @override
@@ -26,11 +27,19 @@ class _LibraryPageState extends State<LibraryPage> {
 
   Future<List<Song>> fetchSongs() async {
     List<Song> songs;
+    var permissions = await Permission.getPermissionsStatus([PermissionName.Camera]);
+
+    var permissionNames = await Permission.requestPermissions([PermissionName.Calendar, PermissionName.Camera]);
+
+    Permission.openSettings;
+
     try {
       songs = await MusicFinder.allSongs();
     } catch(e) {
-      print(e.toString());
+      print(e.toString() + "I errored here");
     }
+
+    print("songs " + songs.toString());
 
     if (songs.isNotEmpty) {
       _songs.addAll(songs);

@@ -21,30 +21,52 @@ class _EditorsPickPageState extends State<EditorsPickPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: GlobalAppConstants.appBackgroundColor,
-      body: Container(
-        margin: EdgeInsets.symmetric(vertical: 20.0),
-        child: GridView.builder(
-          itemBuilder: (context, index) {
-            return Container(
-              width: 160,
-              child: Card(
-                child: Wrap(
-                  children: <Widget>[
-                    Image.network(
-                        "https://api.napster.com/imageserver/v2/albums/${_editorAlbums[index]['id']}/images/500x500.jpg"),
-                    ListTile(
-                      title: Text(_editorAlbums[index]['name']),
-                      subtitle:
-                      Text(_editorAlbums[index]['artistName']),
-                    )
-                  ],
+      body: Center(
+        child: CustomScrollView(
+          slivers: <Widget>[
+            SliverAppBar(
+              title: Text("Editor's Choice"),
+              backgroundColor: Colors.blueGrey,
+              expandedHeight: 200,
+              flexibleSpace: FlexibleSpaceBar(
+                background: Image.network(
+                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRK_8e-Ne7KyqYZwJv32JH9XQm0SlG3kX_JdawE-j3VlTSTF5TNA&s',
+                  fit: BoxFit.cover,
                 ),
               ),
-            );
-          },
-          scrollDirection: Axis.vertical,
-          itemCount: _editorAlbums.length, gridDelegate: SliverGridDelegateWithFixedCrossAxisCount( crossAxisCount: 2,),
-        ),
+            ),
+            SliverList(
+              delegate: SliverChildListDelegate([
+                Container(
+                  child: GridView.builder(
+                    shrinkWrap: true,
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 100,
+                        child: Card(
+                          child: Wrap(
+                            spacing: 10,
+                            children: <Widget>[
+                              Image.network(
+                                  "https://api.napster.com/imageserver/v2/albums/${_editorAlbums[index]['id']}/images/500x500.jpg"),
+                              ListTile(
+                                title: Text(_editorAlbums[index]['name']),
+                                subtitle:
+                                Text(_editorAlbums[index]['artistName']),
+                              )
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                    scrollDirection: Axis.vertical,
+                    itemCount: _editorAlbums.length, gridDelegate: SliverGridDelegateWithFixedCrossAxisCount( crossAxisCount: 2,),
+                  ),
+                )
+              ]),
+            )
+          ],
+        )
       ),
     );
   }

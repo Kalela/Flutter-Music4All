@@ -4,7 +4,7 @@
             "outputFile": "/Users/philipkalela/Desktop/Projects/Flutter/Flutter-Music4All/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7ad6ec17327ea79f37575b333ee4be38/appcompat-v7-27.1.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/philipkalela/.gradle/caches/transforms-2/files-2.1/a37d7647168a444700eada6776a3f208/appcompat-1.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/philipkalela/.gradle/caches/transforms-2/files-2.1/b1d32f2afbb0c48c674c6ff88982425e/support-compat-28.0.0/res/values-v16/values-v16.xml",
+                    "source": "/Users/philipkalela/.gradle/caches/transforms-2/files-2.1/7faf2ad74a0b9932e38d86e684646e95/core-1.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
