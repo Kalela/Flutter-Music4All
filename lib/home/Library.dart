@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flute_music_player/flute_music_player.dart';
 import 'package:musicforall_app/util/globalappconstants.dart';
 import 'package:musicforall_app/util/loaders/loader.dart';
+import 'package:musicforall_app/util/now_playing_footer.dart';
 import 'package:permission/permission.dart';
 
 class LibraryPage extends StatefulWidget {
@@ -9,10 +10,30 @@ class LibraryPage extends StatefulWidget {
   _LibraryPageState createState() => new _LibraryPageState();
 }
 
+enum PlayerState { stopped, playing, paused }
+
 class _LibraryPageState extends State<LibraryPage> {
 
-  List<Song> _songs;
+  String nowPlayingSong = "";
+  String nowPlayingArtist = "";
+
+  Duration duration;
+  Duration position;
+
+  List<Song> _songs = [];
   MusicFinder audioPlayer;
+
+  PlayerState playerState = PlayerState.stopped;
+
+  get isPlaying => playerState == PlayerState.playing;
+  get isPaused => playerState == PlayerState.paused;
+
+  get durationText =>
+      duration != null ? duration.toString().split('.').first : '';
+  get positionText =>
+      position != null ? position.toString().split('.').first : '';
+
+  bool isMuted = false;
 
   @override
   initState() {
@@ -27,9 +48,9 @@ class _LibraryPageState extends State<LibraryPage> {
 
   Future<List<Song>> fetchSongs() async {
     List<Song> songs;
-    var permissions = await Permission.getPermissionsStatus([PermissionName.Camera]);
+    var permissions = await Permission.getPermissionsStatus([PermissionName.Storage, PermissionName.Camera]);
 
-    var permissionNames = await Permission.requestPermissions([PermissionName.Calendar, PermissionName.Camera]);
+    var permissionNames = await Permission.requestPermissions([PermissionName.Storage, PermissionName.Camera]);
 
     Permission.openSettings;
 
@@ -55,39 +76,74 @@ class _LibraryPageState extends State<LibraryPage> {
     super.dispose();
   }
 
+  play(String kUrl) async {
+    final result = await audioPlayer.play(kUrl);
+    if (result == 1) setState(() => playerState = PlayerState.playing);
+  }
+
+// add a isLocal parameter to play a local file
+  playLocal(String kUrl) async {
+    final result = await audioPlayer.play(kUrl);
+    if (result == 1) setState(() => playerState = PlayerState.playing);
+  }
+
+
+  pause() async {
+    final result = await audioPlayer.pause();
+    if (result == 1) setState(() => playerState = PlayerState.paused);
+  }
+
+  stop() async {
+    final result = await audioPlayer.stop();
+    if (result == 1) setState(() => playerState = PlayerState.stopped);
+  }
+
   @override
   Widget build(BuildContext context) {
     Widget child;
-    if(_songs != null) {
+    if(_songs.isNotEmpty) {
       child = Scaffold(
             backgroundColor: GlobalAppConstants.appBackgroundColor,
-            body: Container(
-              margin: EdgeInsets.symmetric(vertical: 20.0),
-              height: 240,
-              child: ListView.builder(
-                itemBuilder: (context, index) {
-                  return Container(
-                    width: 160,
-                    child: Card(
-                      child: Wrap(
-                        children: <Widget>[
-                          ListTile(
-                            title: Text(_songs[index].title),
-                            subtitle:
-                            Text(_songs[index].artist),
-                          )
-                        ],
-                      ),
-                    ),
-                  );
-                },
-                scrollDirection: Axis.vertical,
-                itemCount: _songs.length,
-              ),
-            ),
+            body: Column(
+              children: <Widget>[
+                Expanded(
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Container(
+                        width: 160,
+                        child: Card(
+                          child: InkWell(
+                            onTap: () {
+                              if (playerState == PlayerState.playing) {
+                                stop();
+                              }
+                              playLocal(_songs[index].uri);
+                              setNowPlaying(_songs[index]);
+                            },
+                            child: Wrap(
+                              children: <Widget>[
+                                ListTile(
+                                  title: Text(_songs[index].title),
+                                  subtitle:
+                                  Text(_songs[index].artist),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                    scrollDirection: Axis.vertical,
+                    itemCount: _songs.length,
+                  ),
+                ),
+                NowPlayingFooter(Colors.white, nowPlayingSong, nowPlayingArtist)
+              ],
+            )
       );
     } else {
       child = Scaffold(
+          backgroundColor: GlobalAppConstants.appBackgroundColor,
           body: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -95,12 +151,17 @@ class _LibraryPageState extends State<LibraryPage> {
               children: <Widget>[
                 Text("Searching for music...",
                   style: TextStyle(fontSize: 24, fontFamily: 'Montesserat'),),
-                Loader()
+//                Loader()
               ],
             )
           )
       );
     }
     return child;
+  }
+
+  Widget setNowPlaying(Song song) {
+    nowPlayingArtist = song.artist;
+    nowPlayingSong = song.title;
   }
 }

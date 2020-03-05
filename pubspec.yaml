@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   http: any
   permission: ^0.1.5
+  provider:
 
 dev_dependencies:
   flutter_test:
