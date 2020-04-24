@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flute_music_player/flute_music_player.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:musicforall_app/entities/app_state.dart';
+import 'package:musicforall_app/redux/actions.dart';
 import 'package:musicforall_app/util/globalappconstants.dart';
 import 'package:musicforall_app/util/loaders/loader.dart';
 import 'package:musicforall_app/util/now_playing_footer.dart';
 import 'package:permission/permission.dart';
 
+import '../play_state.dart';
+
 class LibraryPage extends StatefulWidget {
   @override
   _LibraryPageState createState() => new _LibraryPageState();
 }
-
-enum PlayerState { stopped, playing, paused }
 
 class _LibraryPageState extends State<LibraryPage> {
 
@@ -39,11 +42,15 @@ class _LibraryPageState extends State<LibraryPage> {
   initState() {
     super.initState();
     audioPlayer = new MusicFinder();
-    fetchSongs().then((value){
-      setState(() {
-        _songs.addAll(value);
+    if (_songs.isEmpty) {
+      fetchSongs().then((value){
+        StoreProvider.of<AppState>(context)
+            .dispatch(SongsAction(value));
+        setState(() {
+          _songs.addAll(value);
+        });
       });
-    });
+    }
   }
 
   Future<List<Song>> fetchSongs() async {
@@ -59,8 +66,6 @@ class _LibraryPageState extends State<LibraryPage> {
     } catch(e) {
       print(e.toString() + "I errored here");
     }
-
-    print("songs " + songs.toString());
 
     if (songs.isNotEmpty) {
       _songs.addAll(songs);
@@ -106,6 +111,11 @@ class _LibraryPageState extends State<LibraryPage> {
             backgroundColor: GlobalAppConstants.appBackgroundColor,
             body: Column(
               children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Text("Tracks")
+                  ],
+                ),
                 Expanded(
                   child: ListView.builder(
                     itemBuilder: (context, index) {
@@ -126,7 +136,7 @@ class _LibraryPageState extends State<LibraryPage> {
                                   title: Text(_songs[index].title),
                                   subtitle:
                                   Text(_songs[index].artist),
-                                )
+                                ),
                               ],
                             ),
                           ),
@@ -137,7 +147,7 @@ class _LibraryPageState extends State<LibraryPage> {
                     itemCount: _songs.length,
                   ),
                 ),
-                NowPlayingFooter(Colors.white, nowPlayingSong, nowPlayingArtist)
+                NowPlayingFooter(Colors.white, nowPlayingSong, nowPlayingArtist, playerState)
               ],
             )
       );

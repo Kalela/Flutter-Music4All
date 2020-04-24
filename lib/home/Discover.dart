@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_redux/flutter_redux.dart';
 import 'dart:async';
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:musicforall_app/entities/app_state.dart';
 import 'package:musicforall_app/internal/playlists/editors_picks_page.dart';
 import 'package:musicforall_app/internal/playlists/featured_playlist_page.dart';
+import 'package:musicforall_app/redux/actions.dart';
 import 'package:musicforall_app/util/globalappconstants.dart';
 import 'package:musicforall_app/util/now_playing_footer.dart';
 
@@ -58,18 +61,25 @@ class _DiscoverPageState extends State<DiscoverPage> {
 
   @override
   void initState() {
-    getEditorPicks().then((value) {
-      setState(() {
-        _editorAlbums.addAll(value);
+    if (_editorAlbums.isEmpty) {
+      getEditorPicks().then((value) {
+        StoreProvider.of<AppState>(context)
+            .dispatch(EditorAlbumsAction(value));
+        setState(() {
+          _editorAlbums.addAll(value);
+        });
       });
-    });
+    }
 
-    getFeaturedPlaylists().then((value) {
-      setState(() {
-        _featuredPlaylists.addAll(value);
+    if (_featuredPlaylists.isEmpty) {
+      getFeaturedPlaylists().then((value) {
+        StoreProvider.of<AppState>(context)
+            .dispatch(PlaylistsAction(value));
+        setState(() {
+          _featuredPlaylists.addAll(value);
+        });
       });
-    });
-
+    }
     super.initState();
   }
 
