@@ -1,4 +1,6 @@
-import 'package:musicforall_app/play_state.dart';
+
+
+import 'package:musicforall_app/util/globalappconstants.dart';
 
 class AppState {
   List<dynamic> playlists;

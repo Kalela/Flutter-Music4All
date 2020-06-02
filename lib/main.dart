@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:musicforall_app/redux/reducers.dart';
+import 'package:musicforall_app/views/home/Discover.dart';
+import 'package:musicforall_app/views/home/Library.dart';
+import 'package:musicforall_app/views/home/Search.dart';
 
 import 'entities/app_state.dart';
-import 'home/Discover.dart';
-import 'home/Library.dart';
-import 'home/Search.dart';
 import 'package:redux/redux.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 

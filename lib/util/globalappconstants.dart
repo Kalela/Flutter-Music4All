@@ -5,3 +5,5 @@ class GlobalAppConstants {
 
   static final Color appBackgroundColor = Color(0xFF2d3447);
 }
+
+enum PlayerState { stopped, playing, paused }
