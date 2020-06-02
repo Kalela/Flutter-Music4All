@@ -10,7 +10,7 @@ class AppState {
   List<dynamic> songs;
   PlayerState playerState;
 
-  AppState({this.playlists, this.editorAlbums, this.userAlbums, this.songs, this.playerState});
+  AppState({this.playerState});
 
   AppState.fromAppState(AppState another) {
     playlists = another.playlists;
@@ -18,6 +18,7 @@ class AppState {
     userAlbums = another.userAlbums;
     songs = another.songs;
     playerState = another.playerState;
+    featuredPlaylists = another.featuredPlaylists;
   }
 
 

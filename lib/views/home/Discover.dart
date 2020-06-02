@@ -16,14 +16,19 @@ class DiscoverPage extends StatelessWidget {
       builder: (context, state) {
         return StatefulWrapper(
           onInit: () {
-            getEditorPicks().then((value) {
-              StoreProvider.of<AppState>(context)
-                  .dispatch(EditorPicksAction(value));
-            });
-            getFeaturedPlaylists().then((value) {
-              StoreProvider.of<AppState>(context)
-                  .dispatch(FeaturedPlaylistsAction(value));
-            });
+            if (state.editorAlbums == null) {
+              getEditorPicks().then((value) {
+                StoreProvider.of<AppState>(context)
+                    .dispatch(EditorPicksAction(value));
+              });
+            }
+
+            if (state.editorAlbums == null) {
+              getFeaturedPlaylists().then((value) {
+                StoreProvider.of<AppState>(context)
+                    .dispatch(FeaturedPlaylistsAction(value));
+              });
+            }
           },
           child: Scaffold(
             backgroundColor: GlobalAppConstants.appBackgroundColor,
@@ -43,113 +48,124 @@ class DiscoverPage extends StatelessWidget {
                 ),
                 SliverList(
                   delegate: SliverChildListDelegate([
-                    FlatButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    EditorsPickPage(state.editorAlbums)));
-                      },
-                      color: Color(0xFF2d3447),
-                      child: ButtonBar(
-                        alignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Text(
-                            "Editor's Album Picks",
-                            style: TextStyle(
-                                fontSize: 34.0,
-                                color: Colors.white,
-                                fontFamily: 'Montesserat'),
-                          ),
-                          Icon(
-                            Icons.chevron_right,
-                            color: Colors.white,
-                            size: 40.0,
-                          )
-                        ],
+                    Padding(
+                      padding: EdgeInsets.symmetric(vertical: 10),
+                    ),
+                    Ink(
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                      EditorsPickPage(state.editorAlbums)));
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              "Editor's Album Picks",
+                              style: TextStyle(
+                                  fontSize: 34.0,
+                                  color: Colors.white,
+                                  fontFamily: 'Montesserat'),
+                            ),
+                            Icon(
+                              Icons.chevron_right,
+                              color: Colors.white,
+                              size: 40.0,
+                            )
+                          ],
+                        ),
                       ),
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 20.0),
                       height: 240,
-                      child: ListView.builder(
-                        itemBuilder: (context, index) {
-                          return Container(
-                            width: 160,
-                            child: Card(
-                              child: Wrap(
-                                children: <Widget>[
-                                  Image.network(
-                                      "https://api.napster.com/imageserver/v2/albums/${state.editorAlbums[index]['id']}/images/500x500.jpg"),
-                                  ListTile(
-                                    title:
-                                        Text(state.editorAlbums[index]['name']),
-                                    subtitle: Text(state.editorAlbums[index]
-                                        ['artistName']),
-                                  )
-                                ],
-                              ),
-                            ),
-                          );
+                      child: state.editorAlbums != null
+                          ? ListView.builder(
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 160,
+                                  child: Card(
+                                    child: Wrap(
+                                      children: <Widget>[
+                                        Image.network(
+                                            "https://api.napster.com/imageserver/v2/albums/${state.editorAlbums[index]['id']}/images/500x500.jpg"),
+                                        ListTile(
+                                          title: Text(state.editorAlbums[index]
+                                              ['name']),
+                                          subtitle: Text(
+                                              state.editorAlbums[index]
+                                                  ['artistName']),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                );
+                              },
+                              scrollDirection: Axis.horizontal,
+                              itemCount: state.editorAlbums.length,
+                            )
+                          : Container(),
+                    ),
+                    Ink(
+                      child: InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => FeaturedPlaylistsPage(
+                                      state.featuredPlaylists)));
                         },
-                        scrollDirection: Axis.horizontal,
-                        itemCount: state.editorAlbums.length,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              "Featured Playlists",
+                              style: TextStyle(
+                                  fontSize: 34.0,
+                                  color: Colors.white,
+                                  fontFamily: 'Montesserat'),
+                            ),
+                            Icon(
+                              Icons.chevron_right,
+                              color: Colors.white,
+                              size: 40.0,
+                            )
+                          ],
+                        ),
                       ),
                     ),
-                    FlatButton(
-                      onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => FeaturedPlaylistsPage(
-                                    state.featuredPlaylists)));
-                      },
-                      color: Color(0xFF2d3447),
-                      child: ButtonBar(
-                        alignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Text(
-                            "Featured Playlists",
-                            style: TextStyle(
-                                fontSize: 34.0,
-                                color: Colors.white,
-                                fontFamily: 'Montesserat'),
-                          ),
-                          Icon(
-                            Icons.chevron_right,
-                            color: Colors.white,
-                            size: 40.0,
-                          )
-                        ],
-                      ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 20.0),
+                      height: 200,
+                      child: state.featuredPlaylists != null
+                          ? ListView.builder(
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 160,
+                                  child: Card(
+                                    child: Wrap(
+                                      children: <Widget>[
+                                        Image.network(
+                                            "https://api.napster.com/imageserver/v2/playlists/${state.featuredPlaylists[index]['id']}/artists/images/500x500.jpg"),
+                                        ListTile(
+                                          title: Text(
+                                              state.featuredPlaylists[index]
+                                                  ['name']),
+//                              subtitle: Text(_featuredPlaylists[index]['artistName']),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                );
+                              },
+                              scrollDirection: Axis.horizontal,
+                              itemCount: state.featuredPlaylists.length,
+                            )
+                          : Container(),
                     ),
-//                     Container(
-//                       margin: EdgeInsets.symmetric(vertical: 20.0),
-//                       height: 200,
-//                       child: ListView.builder(
-//                         itemBuilder: (context, index) {
-//                           return Container(
-//                             width: 160,
-//                             child: Card(
-//                               child: Wrap(
-//                                 children: <Widget>[
-//                                   Image.network(
-//                                       "https://api.napster.com/imageserver/v2/playlists/${state.featuredPlaylists[index]['id']}/artists/images/500x500.jpg"),
-//                                   ListTile(
-//                                     title: Text(
-//                                         state.featuredPlaylists[index]['name']),
-// //                              subtitle: Text(_featuredPlaylists[index]['artistName']),
-//                                   )
-//                                 ],
-//                               ),
-//                             ),
-//                           );
-//                         },
-//                         scrollDirection: Axis.horizontal,
-//                         itemCount: state.featuredPlaylists.length,
-//                       ),
-//                     ),
                   ]),
                 )
               ],
