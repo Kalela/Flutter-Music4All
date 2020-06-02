@@ -1,7 +1,7 @@
-class EditorAlbumsAction {
+class EditorPicksAction {
   final List<dynamic> payload;
 
-  EditorAlbumsAction(this.payload);
+  EditorPicksAction(this.payload);
 
 }
 
@@ -12,10 +12,10 @@ class UserAlbumsAction {
 
 }
 
-class PlaylistsAction {
+class FeaturedPlaylistsAction {
   final List<dynamic> payload;
 
-  PlaylistsAction(this.payload);
+  FeaturedPlaylistsAction(this.payload);
 
 }
 

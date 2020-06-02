@@ -32,7 +32,7 @@ class MyAppState extends State<MyMusicApp>{
 
   int _selectedPage = 0;
   final _pageOptions = [
-    DiscoverPage(title: "Flutter app home",),
+    DiscoverPage(),
     LibraryPage(),
     SearchPage(),
   ];

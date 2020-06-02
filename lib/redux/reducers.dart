@@ -4,21 +4,22 @@ import 'package:musicforall_app/redux/actions.dart';
 AppState reducer(AppState prevState, dynamic action) {
   AppState newState = AppState.fromAppState(prevState);
 
-  if (action is EditorAlbumsAction) {
-    newState.editorAlbums = action.payload;
+  switch (action) {
+    case EditorPicksAction:
+      newState.editorAlbums = action.payload;
+      break;
+    case UserAlbumsAction:
+      newState.userAlbums = action.payload;
+      break;
+    case SongsAction:
+      newState.songs = action.payload;
+      break;
+    case FeaturedPlaylistsAction:
+      newState.playlists = action.payload;
+      break;
+    case PlayerStateAction:
+      newState.playerState = action.payload;
+      break;
   }
-  else if (action is UserAlbumsAction) {
-    newState.userAlbums = action.payload;
-  }
-  else if (action is SongsAction) {
-    newState.songs = action.payload;
-  }
-  else if (action is PlaylistsAction) {
-    newState.playlists = action.payload;
-  }
-  else if (action is PlayerStateAction) {
-    newState.playerState = action.payload;
-  }
-
   return newState;
 }

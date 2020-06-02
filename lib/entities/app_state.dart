@@ -4,6 +4,7 @@ import 'package:musicforall_app/util/globalappconstants.dart';
 
 class AppState {
   List<dynamic> playlists;
+  List<dynamic> featuredPlaylists;
   List<dynamic> editorAlbums;
   List<dynamic> userAlbums;
   List<dynamic> songs;
