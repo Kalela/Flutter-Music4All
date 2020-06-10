@@ -1,3 +1,5 @@
+import 'package:flute_music_player/flute_music_player.dart';
+
 class EditorPicksAction {
   final List<dynamic> payload;
 
@@ -20,7 +22,7 @@ class FeaturedPlaylistsAction {
 }
 
 class SongsAction {
-  final List<dynamic> payload;
+  final List<Song> payload;
 
   SongsAction(this.payload);
 

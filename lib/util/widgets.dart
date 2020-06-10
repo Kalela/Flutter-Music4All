@@ -24,3 +24,38 @@ Widget showNowPlayingFooter(Color backgroundColor, String songTitle, String arti
       ),
     );
 }
+
+class StatefulWrapper extends StatefulWidget {
+  // class StatefulWrapper extends StatefulWidget {
+  final Function onInit; //   final Function onInit;
+  final Widget child; //   final Widget child;
+
+  const StatefulWrapper(
+      {@required
+          this.onInit,
+      @required
+          this.child}); //   const StatefulWrapper({@required this.onInit, @required this.child});
+
+  @override //   @override
+  _StatefulWrapperState createState() =>
+      _StatefulWrapperState(); //   _StatefulWrapperState createState() => _StatefulWrapperState();
+} // }
+
+class _StatefulWrapperState extends State<StatefulWrapper> {
+  // class _StatefulWrapperState extends State<StatefulWrapper> {
+  @override //   @override
+  void initState() {
+    //   void initState() {
+    if (widget.onInit != null) {
+      //     if (widget.onInit != null) {
+      widget.onInit(); //       widget.onInit();
+    } //     }
+    super.initState(); //     super.initState();
+  } //   }
+
+  @override //   @override
+  Widget build(BuildContext context) {
+    //   Widget build(BuildContext context) {
+    return widget.child; //     return widget.child;
+  } //   }
+}

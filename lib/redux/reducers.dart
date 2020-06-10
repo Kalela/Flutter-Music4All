@@ -11,7 +11,7 @@ AppState reducer(AppState prevState, dynamic action) {
   } else if (action is UserAlbumsAction) {
     newState.userAlbums = action.payload;
   } else if (action is SongsAction) {
-    newState.playlists = action.payload;
+    newState.songs = action.payload;
   } else if (action is PlayerStateAction) {
     newState.playerState = action.payload;
   }

@@ -5,6 +5,7 @@ import 'package:musicforall_app/redux/actions.dart';
 import 'package:musicforall_app/util/functions.dart';
 
 import 'package:musicforall_app/util/globalappconstants.dart';
+import 'package:musicforall_app/util/widgets.dart';
 import 'package:musicforall_app/views/internal_pages/playlists/editors_picks_page.dart';
 import 'package:musicforall_app/views/internal_pages/playlists/featured_playlist_page.dart';
 
@@ -177,37 +178,4 @@ class DiscoverPage extends StatelessWidget {
   }
 }
 
-class StatefulWrapper extends StatefulWidget {
-  // class StatefulWrapper extends StatefulWidget {
-  final Function onInit; //   final Function onInit;
-  final Widget child; //   final Widget child;
 
-  const StatefulWrapper(
-      {@required
-          this.onInit,
-      @required
-          this.child}); //   const StatefulWrapper({@required this.onInit, @required this.child});
-
-  @override //   @override
-  _StatefulWrapperState createState() =>
-      _StatefulWrapperState(); //   _StatefulWrapperState createState() => _StatefulWrapperState();
-} // }
-
-class _StatefulWrapperState extends State<StatefulWrapper> {
-  // class _StatefulWrapperState extends State<StatefulWrapper> {
-  @override //   @override
-  void initState() {
-    //   void initState() {
-    if (widget.onInit != null) {
-      //     if (widget.onInit != null) {
-      widget.onInit(); //       widget.onInit();
-    } //     }
-    super.initState(); //     super.initState();
-  } //   }
-
-  @override //   @override
-  Widget build(BuildContext context) {
-    //   Widget build(BuildContext context) {
-    return widget.child; //     return widget.child;
-  } //   }
-}
